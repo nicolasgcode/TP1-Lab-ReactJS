@@ -1,14 +1,15 @@
-import './App.css'
+import './assets/styles/App.css'
+
+import Game from './components/Game.jsx'
 
 function App() {
 
-
   return (
-    <>
+    <div className='app-container'>
 
-    <h1>Hello</h1>
-    
-    </>
+      <Game/>
+
+    </div>
   )
 }
 

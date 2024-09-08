@@ -1,0 +1,18 @@
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #eaeaea;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background: #f7f7f7;
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+
