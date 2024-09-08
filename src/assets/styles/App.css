@@ -5,14 +5,17 @@
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  background: #eaeaea;
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Arial', sans-serif;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+placeholder {
+  font-size: 0.5rem;
 }
 
 body {
   background: #f7f7f7;
   margin: 0;
-  font-family: 'Helvetica Neue', sans-serif;
 }
 
 

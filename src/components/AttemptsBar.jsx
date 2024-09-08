@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 import '../assets/styles/AttemptsBar.css';
 
-function AttemptsBar({ attemptsLeft }) {
+function AttemptsBar({ progress }) {
   return (
     <div className="attempts-bar-container">
       <div
         className="attempts-bar"
-        style={{ width: `${(attemptsLeft / 10) * 100}%` }} 
+        style={{ width: `${progress}%` }} 
       ></div>
     </div>
   );
@@ -14,6 +14,7 @@ function AttemptsBar({ attemptsLeft }) {
 
 AttemptsBar.propTypes = {
   attemptsLeft: PropTypes.number.isRequired, 
+  progress: PropTypes.number.isRequired,
 };
 
 export default AttemptsBar;

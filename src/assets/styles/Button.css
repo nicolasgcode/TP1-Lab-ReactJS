@@ -7,18 +7,28 @@ button {
   background: linear-gradient(45deg, #007bff, #0056b3);
   cursor: pointer;
   transition: background 0.3s, transform 0.2s;
-  font-family: 'Helvetica Neue', sans-serif;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 button:hover {
-  background: linear-gradient(45deg, #0056b3, #007bff);
+  transform: translateY(-2px);
   transform: scale(1.05);
 }
 
-.btnTry {
-  background: linear-gradient(45deg, #28a745, #218838);
+
+.btnTry:hover{
+  background: linear-gradient(45deg, #218838, #1e7e34);
 }
 
-.btnRestart {
-  background: linear-gradient(45deg, #dc3545, #c82333);
+.btnRestart:hover {
+  background: linear-gradient(45deg, #c82333, #a71d2a);
 }
+
+.button-play-again {
+  display: inline-block;
+}
+
+.button-play-again:hover {
+  background: linear-gradient(45deg, #e67e22, #d35400);
+}
+

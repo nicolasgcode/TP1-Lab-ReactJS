@@ -12,7 +12,7 @@ function ButtonTry({ onClick }) {
 }
 
 ButtonTry.propTypes = {
-  onClick: PropTypes.func.isRequired, // `onClick` debe ser una función y es obligatorio
+  onClick: PropTypes.func.isRequired,
 };
 
 export default ButtonTry;

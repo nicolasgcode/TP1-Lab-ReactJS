@@ -16,8 +16,8 @@ function LabelTry({ value, onChange }) {
 }
 
 LabelTry.propTypes = {
-  value: PropTypes.string.isRequired, // `value` debe ser una cadena y es obligatorio
-  onChange: PropTypes.func.isRequired, // `onChange` debe ser una función y es obligatorio
+  value: PropTypes.string.isRequired, 
+  onChange: PropTypes.func.isRequired,
 };
 
 export default LabelTry

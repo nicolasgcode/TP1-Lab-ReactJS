@@ -3,7 +3,7 @@
   color: white;
   margin-bottom: 20px;
   text-align: center;
-  animation: slideIn 1s ease-out;
+  animation: slideInHeader 1s ease-out;
 }
 
 .score-board {
@@ -24,7 +24,7 @@
   color: #007bff;
 }
 
-@keyframes slideIn {
+@keyframes slideInHeader {
   from {
     opacity: 0;
     transform: translateY(-20px);

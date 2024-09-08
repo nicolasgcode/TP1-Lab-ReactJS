@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Header from "./Header.jsx"
 import ButtonRestart from "./buttons/ButtonRestart.jsx"
 import ButtonTry from "./buttons/ButtonTry.jsx"
@@ -12,15 +12,17 @@ function Game() {
   const [guess, setGuess] = useState('');
   const [randomNumber, setRandomNumber] = useState(generateRandomNumber());
   const [message, setMessage] = useState('');
-  const [attemptsLeft, setAttemptsLeft] = useState(10); // Número inicial de intentos
+  const [attemptsLeft, setAttemptsLeft] = useState(10);
   const [showLoseScreen, setShowLoseScreen] = useState(false);
+  const [progress, setProgress] = useState(100); 
+  const [isGameOver] = useState(false);
 
   function generateRandomNumber() {
     return Math.floor(Math.random() * 20) + 1;
   }
 
   const handleTry = () => {
-    if (attemptsLeft <= 0) return; // No hacer nada si ya no hay intentos
+    if (attemptsLeft <= 0) return;
 
     const numGuess = parseInt(guess, 10);
     if (isNaN(numGuess) || numGuess < 1 || numGuess > 20) {
@@ -30,11 +32,13 @@ function Game() {
 
     if (numGuess === randomNumber) {
       setMessage('Congratulations! You guessed the number!');
-      setAttemptsLeft(10); // Reinicia los intentos si acierta
-      setRandomNumber(generateRandomNumber()); // Genera un nuevo número
+      setAttemptsLeft(10);
+      setRandomNumber(generateRandomNumber());
+      setProgress(100);
     } else {
-      setAttemptsLeft(attemptsLeft - 1);
-      if (attemptsLeft - 1 === 0) {
+      const newAttempts = attemptsLeft - 1;
+      setAttemptsLeft(newAttempts);
+      if (newAttempts === 0) {
         setShowLoseScreen(true);
         setMessage('');
       } else {
@@ -42,7 +46,7 @@ function Game() {
       }
     }
 
-    setGuess(''); // Limpia el campo de entrada
+    setGuess('');
   };
 
   const handleRestart = () => {
@@ -50,22 +54,44 @@ function Game() {
     setGuess('');
     setMessage('');
     setAttemptsLeft(10);
+    setProgress(100); 
     setShowLoseScreen(false);
   };
+
+  
+  useEffect(() => {
+    if (showLoseScreen) return; 
+
+    const intervalId = setInterval(() => {
+      setProgress(prev => {
+        if (prev <= 0) {
+          clearInterval(intervalId);
+          setShowLoseScreen(true); 
+          return 0;
+        }
+        return prev - 10; 
+      });
+    }, 1000);
+
+    return () => clearInterval(intervalId); 
+  }, [showLoseScreen]);
 
   return (
     <div className="game-container">
       {showLoseScreen ? (
-        <LoseScreen />
+        <LoseScreen onPlayAgain={handleRestart} />
       ) : (
         <>
           <Header />
-          <AttemptsBar attemptsLeft={attemptsLeft} />
+          <AttemptsBar attemptsLeft={attemptsLeft} progress={progress} /> 
           <div className="controls">
             <ButtonRestart onClick={handleRestart} />
             <LabelTry value={guess} onChange={(e) => setGuess(e.target.value)} />
             <ButtonTry onClick={handleTry} />
-            <Message message = {message} />
+          </div>
+          <Message message= {message}/>
+          <div>
+            {isGameOver && <LoseScreen onPlayAgain = {handleRestart} />}
           </div>
         </>
       )}

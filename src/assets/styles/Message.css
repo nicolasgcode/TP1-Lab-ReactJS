@@ -1,0 +1,20 @@
+ .message {
+   display: inline-block;
+   opacity: 0;
+   transform: translateX(-100%);
+   animation: appear 2s ease-out forwards;
+   padding-top: 20px;
+   color: white;
+ }
+
+ @keyframes appear {
+   0% {
+     opacity: 0;
+     transform: translateX(-100%);
+   }
+
+   100% {
+     opacity: 1;
+     transform: translateX(0);
+   }
+ }
