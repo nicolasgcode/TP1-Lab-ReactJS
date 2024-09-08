@@ -3,8 +3,8 @@
    opacity: 0;
    transform: translateX(-100%);
    animation: appear 2s ease-out forwards;
-   padding-top: 20px;
    color: white;
+   padding-top: 30px;
  }
 
  @keyframes appear {

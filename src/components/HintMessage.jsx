@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import '../assets/styles/Message.css'
+import '../assets/styles/HintMessage.css'
 
 function Message({ message }) {
   return (

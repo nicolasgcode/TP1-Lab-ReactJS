@@ -6,7 +6,7 @@ import '../../assets/styles/Button.css'
 function ButtonTry({ onClick }) {
   return (
     <button className="btnTry" onClick={onClick}>
-      Try
+      Guess
     </button>
   );
 }
