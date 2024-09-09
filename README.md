@@ -2,6 +2,11 @@
 
 ## Juego de adivinar el número
 
+### Para correr la app:
+    1) npm i
+    2) npm run dev
+    
+### Descripción
 Tu score será la suma de los números que vayas adivinando y tu highscore será el puntaje máximo que alcances antes de perder la partida.
 
 ¡Cuidado! La barra de intentos irá disminuyendo al ingresar un número equivocado. ¡Esfuérzate por seguir las pistas y regenerar la barra de intentos antes de que pierdas!
