@@ -1,6 +1,6 @@
-#TP1-Lab-ReactJS
+# TP1-Lab-ReactJS
 
-Juego de adivinar el número
+## Juego de adivinar el número
 
 Tu score será la suma de los números que vayas adivinando y tu highscore será el puntaje máximo que alcances antes de perder la partida.
 
