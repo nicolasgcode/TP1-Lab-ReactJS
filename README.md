@@ -2,8 +2,8 @@
 
 ## Juego de adivinar el número
 ### Para usar la app:
-    1. Instalar dependencias: **npm i**
-    2. Correr la app: **npm run dev**
+    1. Instalar dependencias: npm i
+    2. Correr la app: npm run dev
 ### Descripción
 Tu score será la suma de los números que vayas adivinando y tu highscore será el puntaje máximo que alcances antes de perder la partida.
 
