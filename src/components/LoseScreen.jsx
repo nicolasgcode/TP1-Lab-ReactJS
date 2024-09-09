@@ -14,7 +14,7 @@ function LoseScreen({ onPlayAgain }) {
 }
 
 LoseScreen.propTypes = {
-  onPlayAgain: PropTypes.string.isRequired,
+  onPlayAgain: PropTypes.func.isRequired,
 };
 
 export default LoseScreen;
