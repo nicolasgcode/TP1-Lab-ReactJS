@@ -2,7 +2,6 @@
 
 ## Juego de adivinar el número
 ### Para usar la app:
-    #### En una nueva terminal:
         1. Instalar dependencias: npm i
         2. Correr la app: npm run dev
 ### Descripción
