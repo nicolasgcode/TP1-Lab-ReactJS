@@ -4,7 +4,7 @@ import '../../assets/styles/Button.css';
 
 function GuessButton({ onClick }) {
   return (
-    <button className="btnTry" onClick={onClick}>
+    <button className="guess-btn" onClick={onClick}>
       Guess
     </button>
   );

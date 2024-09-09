@@ -4,7 +4,7 @@ import '../../assets/styles/Button.css';
 
 function RestartButton({ onClick }) {
   return (
-    <button className="btnRestart" onClick={onClick}>
+    <button className="restart-btn" onClick={onClick}>
       Restart Game
     </button>
   );

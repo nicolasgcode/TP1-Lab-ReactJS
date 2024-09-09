@@ -7,7 +7,7 @@ function LabelTry({ value, onChange }) {
       <input
         type="number"
         placeholder="Enter a number between 1 and 20"
-        className="label-try"
+        className="guess-label"
         value={value}
         onChange={onChange}
       />

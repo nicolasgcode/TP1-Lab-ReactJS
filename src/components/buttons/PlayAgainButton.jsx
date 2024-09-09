@@ -4,7 +4,7 @@ import '../../assets/styles/Button.css';
 
 function PlayAgainButton({ onClick }) {
   return (
-    <button className="button-play-again" onClick={onClick}>
+    <button className="play-again-btn" onClick={onClick}>
       Play Again
     </button>
   );

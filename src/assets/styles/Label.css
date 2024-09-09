@@ -6,7 +6,7 @@
   margin-bottom: 30px;
 }
 
-.label-try {
+.guess-label {
   font-size: 1em;
   padding: 10px;
   border: 2px solid rgb(97, 96, 96);
@@ -19,17 +19,17 @@
   background-color: rgb(204, 232, 250);
 }
 
-.label-try::placeholder {
+.guess-label::placeholder {
   color: rgb(100, 100, 100);
 }
 
-.label-try:focus {
+.guess-label:focus {
   border-color: #007bff;
   box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
   outline: none;
 }
 
-.label-try:hover {
+.guess-label:hover {
   border-color: #007bff;
   box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
   outline: none;
@@ -43,5 +43,6 @@ input::-webkit-inner-spin-button {
 }
 
 input[type='number'] {
+  appearance: textfield;
   -moz-appearance: textfield;
 }
