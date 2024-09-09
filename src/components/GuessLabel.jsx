@@ -1,7 +1,7 @@
 import '../assets/styles/Label.css';
 
 import PropTypes from 'prop-types';
-function LabelTry({ value, onChange }) {
+function GuessLabel({ value, onChange }) {
   return (
     <div className="label-container">
       <input
@@ -15,9 +15,9 @@ function LabelTry({ value, onChange }) {
   );
 }
 
-LabelTry.propTypes = {
+GuessLabel.propTypes = {
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
 };
 
-export default LabelTry;
+export default GuessLabel;

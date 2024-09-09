@@ -19,8 +19,8 @@ function Header({ score, highscore }) {
 }
 
 Header.propTypes = {
-  score: PropTypes.func.isRequired,
-  highscore: PropTypes.func.isRequired,
+  score: PropTypes.number.isRequired,
+  highscore: PropTypes.number.isRequired,
 };
 
 export default Header;
