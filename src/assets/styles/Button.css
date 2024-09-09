@@ -15,7 +15,7 @@ button:hover {
   transform: scale(1.05);
 }
 
-.btnTry:hover{
+.btnTry:hover {
   background: linear-gradient(45deg, #218838, #1e7e34);
 }
 
@@ -26,4 +26,3 @@ button:hover {
 .button-play-again:hover {
   background: linear-gradient(45deg, #e67e22, #d35400);
 }
-

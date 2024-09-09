@@ -1,14 +1,13 @@
 import PropTypes from 'prop-types';
-import '../assets/styles/HintMessage.css'
 
-function Message({ message }) {
-  return (
-    <div className="message">{message}</div>
-  )
+import '../assets/styles/Message.css';
+
+function HintMessage({ message }) {
+  return <div className="message">{message}</div>;
 }
 
-Message.propTypes = {
+HintMessage.propTypes = {
   message: PropTypes.string.isRequired,
 };
 
-export default Message
+export default HintMessage;

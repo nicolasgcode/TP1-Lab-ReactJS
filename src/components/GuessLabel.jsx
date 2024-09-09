@@ -1,4 +1,4 @@
-import '../assets/styles/Label.css'
+import '../assets/styles/Label.css';
 
 import PropTypes from 'prop-types';
 function LabelTry({ value, onChange }) {
@@ -16,8 +16,8 @@ function LabelTry({ value, onChange }) {
 }
 
 LabelTry.propTypes = {
-  value: PropTypes.string.isRequired, 
+  value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
 };
 
-export default LabelTry
+export default LabelTry;

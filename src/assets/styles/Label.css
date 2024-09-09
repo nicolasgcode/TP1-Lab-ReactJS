@@ -9,13 +9,18 @@
 .label-try {
   font-size: 1em;
   padding: 10px;
-  border: 2px solid #ddd;
+  border: 2px solid rgb(97, 96, 96);
   border-radius: 8px;
   width: 100%;
   max-width: 300px;
   transition: border-color 0.3s, box-shadow 0.3s;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   text-align: center;
+  background-color: rgb(204, 232, 250);
+}
+
+.label-try::placeholder {
+  color: rgb(100, 100, 100);
 }
 
 .label-try:focus {
@@ -24,12 +29,19 @@
   outline: none;
 }
 
+.label-try:hover {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  outline: none;
+  cursor: pointer;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-input[type=number] {
+input[type='number'] {
   -moz-appearance: textfield;
 }

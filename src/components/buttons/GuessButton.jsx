@@ -1,9 +1,8 @@
-
 import PropTypes from 'prop-types';
 
-import '../../assets/styles/Button.css'
+import '../../assets/styles/Button.css';
 
-function ButtonTry({ onClick }) {
+function GuessButton({ onClick }) {
   return (
     <button className="btnTry" onClick={onClick}>
       Guess
@@ -11,8 +10,8 @@ function ButtonTry({ onClick }) {
   );
 }
 
-ButtonTry.propTypes = {
+GuessButton.propTypes = {
   onClick: PropTypes.func.isRequired,
 };
 
-export default ButtonTry;
+export default GuessButton;

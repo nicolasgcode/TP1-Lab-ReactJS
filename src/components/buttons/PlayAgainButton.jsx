@@ -1,12 +1,17 @@
 import PropTypes from 'prop-types';
-function ButtonPlayAgain({ onClick }) {
+
+import '../../assets/styles/Button.css';
+
+function PlayAgainButton({ onClick }) {
   return (
     <button className="button-play-again" onClick={onClick}>
       Play Again
     </button>
   );
 }
-ButtonPlayAgain.propTypes = {
+
+PlayAgainButton.propTypes = {
   onClick: PropTypes.func.isRequired,
 };
-export default ButtonPlayAgain;
+
+export default PlayAgainButton;

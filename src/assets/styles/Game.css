@@ -1,26 +1,20 @@
-.game-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 100vw;
-  background-image: url(./img/guess-the-number-bg.jpg);
-  opacity: 1;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  margin: 0;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
+.game-container,
 .controls {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  width: 100%;
-  max-width: 600px;
+}
+
+.game-container {
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  opacity: 1;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
 }

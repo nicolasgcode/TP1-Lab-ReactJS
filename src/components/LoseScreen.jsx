@@ -1,14 +1,14 @@
-import ButtonPlayAgain from './buttons/ButtonPlayAgain.jsx';
+import PlayAgainButton from './buttons/PlayAgainButton.jsx';
 
 import PropTypes from 'prop-types';
 
 import '../assets/styles/LoseScreen.css';
 
-function LoseScreen({onPlayAgain}) {
+function LoseScreen({ onPlayAgain }) {
   return (
     <div className="lose-screen">
       <h1>You Lose!</h1>
-      <ButtonPlayAgain onClick={onPlayAgain}/>
+      <PlayAgainButton onClick={onPlayAgain} />
     </div>
   );
 }
@@ -16,6 +16,5 @@ function LoseScreen({onPlayAgain}) {
 LoseScreen.propTypes = {
   onPlayAgain: PropTypes.string.isRequired,
 };
-
 
 export default LoseScreen;

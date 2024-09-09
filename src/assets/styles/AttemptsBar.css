@@ -11,5 +11,5 @@
 .attempts-bar {
   height: 100%;
   background-color: #2884e6;
-  transition: width 0.3s ease;
+  transition: width 0.3s ease, background 0.3s ease;
 }

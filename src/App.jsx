@@ -1,16 +1,13 @@
-import './assets/styles/App.css'
+import './assets/styles/App.css';
 
-import Game from './components/Game.jsx'
+import Game from './components/Game.jsx';
 
 function App() {
-
   return (
-    <div className='app-container'>
-
-      <Game/>
-
+    <div className="app-container">
+      <Game />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
